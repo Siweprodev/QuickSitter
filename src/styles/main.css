@@ -17,6 +17,13 @@ body {
   text-align: center;
 }
 
+@media (max-width: 768px) {
+  .card {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
 .card img {
   width: 100%;
   height: 200px;
@@ -30,6 +37,13 @@ button {
   background: black;
   color: white;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
 }
 
 /* Hero Section */
@@ -102,6 +116,25 @@ button.secondary {
   border: 1px solid #ccc;
 }
 
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+}
+
 /* Navbar */
 .navbar {
   display: flex;
@@ -148,6 +181,19 @@ button.secondary {
   background: #333;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
 /* Login/Register Pages */
 .auth-container {
   height: 100vh;
@@ -156,6 +202,7 @@ button.secondary {
   align-items: center;
   background: #f4f6f8;
 }
+
 
 .auth-box {
   width: 350px;
@@ -211,6 +258,15 @@ button.secondary {
   color: black;
   border: 1px solid #ccc;
 }
+
+@media (max-width: 768px) {
+  .auth-box {
+    width: 90%;
+    padding: 20px;
+    
+  }
+}
+
 
 /* Booking Page */
 
