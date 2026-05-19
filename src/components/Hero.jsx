@@ -19,7 +19,7 @@ function Hero() {
 
         <div className="hero-buttons">
           <button>Find a Babysitter</button>
-          <button className="secondary">Become a Babysitter</button>
+          <button className="btn-white">Become a Babysitter</button>
         </div>
       </div>
     </section>

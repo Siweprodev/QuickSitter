@@ -102,6 +102,16 @@ button {
   justify-content: center;
 }
 
+.btn-white {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(6px);
+  color: black;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+
+
+
+
 @media (max-width: 768px) {
   .hero {
     height: 70vh;
@@ -131,11 +141,19 @@ button {
 /* Navbar */
 
 .navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   padding: 15px 30px;
-  background: white;
+
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+
   border-bottom: 1px solid #eee;
 }
 
@@ -195,49 +213,60 @@ button:hover {
 
 /* Login/Register Pages */
 .auth-container {
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #f4f6f8;
+  padding: 20px;
 }
 
-
 .auth-box {
-  width: 350px;
+  width: 100%;
+  max-width: 400px;
+
   padding: 30px;
   background: white;
-  border-radius: 10px;
+
+  border-radius: 12px;
+
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+
   text-align: center;
 }
 
 .auth-box h2 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .auth-box p {
   color: #666;
-  font-size: 14px;
   margin-bottom: 20px;
 }
 
 .auth-box input {
   width: 100%;
   padding: 12px;
-  margin: 8px 0;
+  margin-bottom: 15px;
+
   border: 1px solid #ddd;
   border-radius: 6px;
+
+  font-size: 16px;
+
+  box-sizing: border-box;
 }
 
 .auth-box button {
   width: 100%;
   padding: 12px;
-  margin-top: 10px;
+
   border: none;
+  border-radius: 6px;
+
   background: black;
   color: white;
-  border-radius: 6px;
+
   cursor: pointer;
 }
 
@@ -246,26 +275,25 @@ button:hover {
   font-size: 14px;
 }
 
-.auth-text a {
-  color: blue;
-  text-decoration: none;
-}
-
-.back-btn {
-  margin-top: 10px;
-  background: transparent;
-  color: black;
-  border: 1px solid #ccc;
-}
-
+/* MOBILE FIXES */
 @media (max-width: 768px) {
   .auth-box {
-    width: 90%;
     padding: 20px;
-    
+  }
+
+  .auth-box h2 {
+    font-size: 24px;
+  }
+
+  .auth-box p {
+    font-size: 14px;
+  }
+
+  .auth-box input,
+  .auth-box button {
+    font-size: 14px;
   }
 }
-
 
 /* Booking Page */
 
