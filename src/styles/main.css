@@ -1,0 +1,230 @@
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+button {
+  padding: 12px 18px;
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border-radius: 6px;
+}
+
+button.secondary {
+  background: white;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: white;
+  border-bottom: 1px solid #eee;
+  position: sticky;
+  top: 0;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
+
+.nav-button button {
+  padding: 8px 14px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.nav-button button:hover {
+  background: #333;
+}
+
+/* Login/Register Pages */
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f6f8;
+}
+
+.auth-box {
+  width: 350px;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 5px;
+}
+
+.auth-box p {
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.auth-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.auth-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.auth-text a {
+  color: blue;
+  text-decoration: none;
+}
+
+.back-btn {
+  margin-top: 10px;
+  background: transparent;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+/* Booking Page */
+
+.booking-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.booking-container input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
