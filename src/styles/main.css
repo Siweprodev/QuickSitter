@@ -129,6 +129,7 @@ button {
 }
 
 /* Navbar */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -136,8 +137,6 @@ button {
   padding: 15px 30px;
   background: white;
   border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
 }
 
 .logo h2 {
@@ -175,15 +174,11 @@ button {
 }
 
 @media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
   .nav-links {
-    flex-direction: column;
+    display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
