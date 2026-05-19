@@ -139,12 +139,13 @@ button {
   border-bottom: 1px solid #eee;
 }
 
-.logo h2 {
-  margin: 0;
+/* LEFT LOGO */
+.logo {
   font-size: 20px;
   font-weight: bold;
 }
 
+/* CENTER LINKS */
 .nav-links {
   display: flex;
   gap: 20px;
@@ -156,11 +157,21 @@ button {
   font-weight: 500;
 }
 
-.nav-links a:hover {
-  color: #000;
+/* RIGHT SIDE */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-.nav-button button {
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* BUTTONS */
+button {
   padding: 8px 14px;
   border: none;
   background: black;
@@ -169,7 +180,7 @@ button {
   cursor: pointer;
 }
 
-.nav-button button:hover {
+button:hover {
   background: #333;
 }
 

@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { getUser, logoutUser } from "../auth/auth";
 import { useState, useEffect } from "react";
 
 function Navbar() {
   const [user, setUser] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setUser(getUser());
@@ -16,21 +17,24 @@ function Navbar() {
 
   return (
     <nav className="navbar">
-      <h2>QuickSitter</h2>
+      <h2 className="logo">QuickSitter</h2>
 
       <div className="nav-links">
         <Link to="/">Home</Link>
         <Link to="/babysitters">Babysitters</Link>
+        <Link to="/booking">Booking</Link>
       </div>
 
-      <div>
+      <div className="nav-right">
         {user ? (
-          <div>
+          <div className="user-box">
             <span>Hi, {user.name}</span>
             <button onClick={handleLogout}>Logout</button>
           </div>
         ) : (
-          <Link to="/login">Login</Link>
+          <button onClick={() => navigate("/login")}>
+            Login
+          </button>
         )}
       </div>
     </nav>
